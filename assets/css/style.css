@@ -818,6 +818,14 @@ section .container {
   background: rgba(0, 0, 0, 0.6);
 }
 
+/* Ensure all portfolio images are the same size */
+.portfolio-wrap img {
+    width: 100%;
+    height: 250px; /* or a height that fits your design */
+    object-fit: cover; /* This ensures the image doesn't get distorted */
+    padding: 5px !important;
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
